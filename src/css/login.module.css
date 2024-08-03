@@ -1,0 +1,15 @@
+.sub_container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* 자식 요소가 부모의 높이를 채우도록 설정 */
+  height: 500px;
+  margin-top: 20px;
+}
+
+.vertical_line {
+  width: 1px;
+  height: auto;
+  background-color: #E4E4E4; 
+  margin: 0 75px; /* 양쪽에 여백을 추가하여 공간 확보 */
+  align-self: stretch; /* 부모의 높이에 맞추기 위해 추가 */
+}

@@ -1,0 +1,141 @@
+.tableContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: visible; /* 부모 요소가 자식 요소를 가리지 않도록 설정 */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* 고정된 테이블 레이아웃 */
+  overflow: visible; /* 테이블이 자식 요소를 가리지 않도록 설정 */
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px; 
+  text-align: center;
+  overflow: visible; /* 셀이 자식 요소를 가리지 않도록 설정 */
+  text-overflow: ellipsis; /* 내용이 넘칠 경우 말줄임표 추가 */
+  white-space: nowrap; /* 줄바꿈 방지 */
+  vertical-align: middle; /* 세로 가운데 정렬 */
+  font-size: 16px;
+  position: relative; /* 툴팁이 셀 안에서 제대로 위치할 수 있도록 설정 */
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.pagination button {
+  background: none;
+  border: 1px solid #D9D9D9;
+  font-size: 14px; 
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.pagination .activePage {
+  background-color: #00823E;
+  color: white;
+  border: none; /* 테두리 제거 */
+  height: 30px;
+}
+
+.pagination {
+  border: none !important;
+}
+
+.paginationGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pagination button:hover {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+  color: #26816E;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: not-allowed;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 10; /* 툴팁을 다른 요소들 위에 표시 */
+  bottom: 125%; /* Tooltip이 위로 뜨도록 설정 */
+  left: 50%;
+  transform: translateX(-50%); /* 툴팁을 가운데 정렬 */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.deleteButton, .unansweredButton {
+  width: 60px;
+}
+
+.deleteButton {
+  background-color: #CF1E1E;
+  color: white;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px; /* 테두리 반지름 줄이기 */
+  cursor: pointer;
+  margin-right: 3px; /* 간격 줄이기 */
+  font-size: 12px; /* 폰트 크기 줄이기 */
+  height: 28px;
+}
+
+.unansweredButton {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px; /* 테두리 반지름 줄이기 */
+  cursor: pointer;
+  font-size: 12px; /* 폰트 크기 줄이기 */
+  height: 28px;
+}
+
+.unansweredButton.unanswered {
+  background-color: #26816E;
+  color: white;
+}
+
+.unansweredButton.answered {
+  background-color: #EAF9F1;
+  color: black;
+}
+
+.deleteButton:hover, .unansweredButton:hover {
+  opacity: 0.8;
+}

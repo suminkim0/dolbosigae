@@ -1,0 +1,108 @@
+.co_insert_contanier {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.subContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.co_insert_image {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 20px;
+    width: 600px;
+}
+
+.co_insert_table_container {
+    width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+    border: 1px solid #CCCCCC;
+    border-top: 2px solid #CCCCCC;
+}
+
+.co_insert_table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.co_insert_tr {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.co_insert_th {
+    width: 25%;
+    font-size: 16px;
+    text-align: left;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #CCCCCC;
+}
+
+.co_insert_td {
+    width: 75%;
+    padding: 15px;
+}
+
+.co_insert_input {
+    width: calc(100% - 20px);
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+}
+
+.co_insert_conditions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #595959;
+    font-style: italic;
+}
+
+.co_insertBtn, .co_insert_back {
+    width: 200px;
+    height: 50px;
+    background-color: #00823E;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.co_insert_back {
+    background-color: #595959;
+    margin-left: 20px;
+}
+
+.co_insert_footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.co_insertBtn:hover, .co_insert_back:hover {
+    opacity: 0.8;
+}
+
+.co_insert_notice {
+    color: #888888;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}

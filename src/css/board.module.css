@@ -1,0 +1,134 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mainContent {
+  padding: 20px;
+}
+
+.searchAndTableContainer {
+  display: flex;
+  flex-flow: column;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: #00823E;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  opacity: 0.8;
+}
+
+.addButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.linkButton {
+  padding: 10px 20px;
+  background-color: #595959;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.linkButton:hover {
+  opacity: 0.8;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.table td {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit; /* 링크 텍스트의 기본 색상을 유지하고 싶다면 추가 */
+}
+
+.DeleteBtn {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.DeleteBtn:hover {
+  background-color: #c82333;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.paginationContainer button {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.paginationContainer .activePage {
+  background-color: #00823E;
+  color: #fff;
+  font-weight: bold; /* 추가: 굵게 표시 */
+}
+
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

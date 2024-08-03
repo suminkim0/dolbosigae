@@ -1,0 +1,56 @@
+.defaultContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.defaultTitle {
+  display: flex;
+  align-items: center;
+}
+
+.logo_small {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.defaultTitle h2 {
+  font-size: 20px;
+}
+
+.defaultTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.defaultTable th, .defaultTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.defaultTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.defaultTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.contentRow {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.contentRow.show {
+  display: table-row;
+}
+
+.contentRow div {
+  white-space: pre-wrap;
+  padding: 20px 0 20px 0;
+  cursor: pointer;
+}

@@ -1,0 +1,78 @@
+.container{
+  background: linear-gradient(to bottom, #0F3C3C 50%, white 50%);
+  padding: 20px; /* 슬라이더와 상하단 여백을 위한 패딩 */
+}
+
+.title{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.title h2{
+  margin-right: 20px;
+  font-size: 24px;
+  padding-left: 5%;
+  color: white;
+}
+
+.title p{
+  color: white;
+}
+
+.title button{
+  margin-left: 20px;
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+.listContainer{
+  margin-top: 20px;
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.customLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 슬라이드 개수에 맞게 수정 */
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 400px;
+}
+
+.listItem img {
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.listItem div {
+  margin: 10px 0;
+}
+
+.abbreed{
+  font-size: 20px;
+  font-weight: bold;
+}
+

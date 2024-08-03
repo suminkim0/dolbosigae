@@ -1,0 +1,134 @@
+.winner_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.winner_main_container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+.winner_dog_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.dwcp_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00823E;
+}
+
+.winner_img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.winner_info {
+    width: 100%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.winner_pTag {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.winner_button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.winner_back {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #00823E;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.winner_back:hover {
+    background-color: #006b31;
+    transform: scale(1.05);
+}
+
+.ranking_community_container {
+    max-width: 700px;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ranking_title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00823E;
+    margin-bottom: 20px;
+}
+
+.ranking_topTen_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.ranking_topTen_table th, .ranking_topTen_table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.ranking_th_img, .ranking_img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.ranking_typeInfo {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.ranking_item:hover {
+    background-color: #f4f4f4;
+}

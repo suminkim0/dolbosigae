@@ -1,0 +1,242 @@
+.mateSearchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.mateSearchBox select {
+  width: 150px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px solid #BEB4B4;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.mateSearchBox input {
+  width: 500px;
+  height: 40px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border: 1px solid #BEB4B4;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.searchBtn {
+  width: 100px;
+  height: 40px;
+  background-color: #00823E;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  margin-right: 3px;
+}
+
+.mateSearchBox button:hover {
+  opacity: 0.8;
+}
+
+.subBtnSet{
+  display: flex;
+  position: absolute;
+  right: 1%;
+}
+
+.msgBtn{
+  width: 100px;
+  height: 40px;
+  background-color: #595959;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  margin-right: 3px;
+}
+
+.favBtn{
+  width: 100px;
+  height: 40px;
+  background-color: #0F3C3C;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  margin-right: 3px;
+}
+
+.mateTableContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+  margin-top: 20px;
+}
+
+.mateTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px; /* 테이블 안의 글자 크기 설정 */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.mateTable th, .mateTable td {
+  border: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mateTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.mateTable td {
+  height: auto;
+}
+
+.mateCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #EFEFEF;
+  border-radius: 10px;
+}
+
+.mateCard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.mateCard span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mateFlexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.mateLabel {
+  width: 100px; /* 라벨의 고정된 너비 */
+  text-align: right;
+  margin-right: 10px; /* 라벨과 입력 필드 사이의 간격 */
+}
+
+.mateInput {
+  width: 150px; 
+  height: 35px;
+  border: 1px solid #BEB4B4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* input[type="checkbox"] {
+  width: 25px;
+} */
+
+.matePetInfo {
+  width: 300px;
+}
+
+.matePagination {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  margin-top: 20px;
+}
+
+.matePagination button {
+  background: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+}
+
+.matePagination .mateActivePage {
+  background-color: #00823E;
+  color: white;
+  border: none; /* 테두리 제거 */
+}
+
+.matePagination button:hover {
+  text-decoration: underline;
+}
+
+.mateMypageButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mateMypageButton {
+  background-color: #595959;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.mateMypageButton img {
+  margin-right: 8px;
+}
+
+.mateCard {
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.mateImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.favoriteIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px !important;
+  height: 40px !important;
+}

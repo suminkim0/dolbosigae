@@ -1,0 +1,87 @@
+.detailContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.detailTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.headerRow th,
+.headerRow td {
+  padding: 10px;
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.detailTable th,
+.detailTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.contentRow th {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.contentCell {
+  padding: 20px;
+  background-color: #fff;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.contentCell div{
+  min-height: 400px;
+}
+
+.detailBtnGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.commentBtn,
+.editBtn,
+.deleteBigBtn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.commentBtn {
+  background-color: #595959;
+  color: white;
+}
+
+.editBtn {
+  background-color: #00823E;
+  color: white;
+}
+
+.deleteBigBtn {
+  background-color: #CF1E1E;
+  color: white;
+}
+
+.commentBtn:hover,
+.editBtn:hover,
+.deleteBigBtn:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}

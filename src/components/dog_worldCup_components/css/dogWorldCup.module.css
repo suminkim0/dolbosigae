@@ -1,0 +1,120 @@
+.dwc_main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.dwc_explanation_container {
+    margin-top: 20px;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.dwc_explanation {
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+.dwc_option_container {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+}
+
+.dwc_link_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.dwc_link {
+    width: 180px;
+    height: 55px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #00823E;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 55px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+.dwc_link:hover {
+    background-color: #006B31;
+    transform: scale(1.05);
+}
+
+.dwc_label {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dwc_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.dwc_span {
+    font-size: 20px;
+    margin-bottom: 100px;
+    padding-top: 30px;
+}
+
+.dwc_hr {
+    width: 80%;
+    margin: 40px auto;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.dwc_img_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.dwc_img_button_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.dwc_img_button_container:hover {
+    transform: scale(1.05);
+}
+
+.dwc_image {
+    width: 280px;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #00823E;
+}
+
+.hiddenText {
+    font-size: 16px;
+    color: #00823E;
+    text-align: center;
+    margin-top: 15px;
+}

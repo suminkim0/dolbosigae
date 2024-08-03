@@ -1,0 +1,81 @@
+.Container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.Container ul {
+  list-style-type: none;
+}
+
+.pet_image {
+  width: 400px;
+  border-radius: 60px;
+}
+
+.toggleWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.toggleSwitch {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #ccc;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.toggleSwitch::before {
+  content: '';
+  position: absolute;
+  width: 34px; /* Adjust the width of the circle */
+  height: 34px; /* Adjust the height of the circle */
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.3s;
+  left: 3px;
+  top: 3px;
+}
+
+.toggleSwitch.on {
+  background-color: #00823E;
+}
+
+.toggleSwitch.on::before {
+  left: 63px; /* Adjust this value based on the width of the toggle switch */
+}
+
+.toggleSwitch::after {
+  content: 'OFF';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+.toggleSwitch.on::after {
+  content: 'ON';
+  color: white;
+}
+
+.toggleLabel {
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+  color: #00823E;
+}

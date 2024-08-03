@@ -1,0 +1,73 @@
+.petContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.petTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.petTable img {
+  width: 400px;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.petName {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.petInfoTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+.petInfoTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.petInfoTable td:first-child {
+  font-weight: bold;
+}
+
+.petActions { /* 추가된 부분: 버튼 컨테이너 스타일 */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.petActions button { /* 추가된 부분: 버튼 공통 스타일 */
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.messageButton { /* 추가된 부분: 쪽지 보내기 버튼 스타일 */
+  width: 180px;
+  background-color: #595959;
+  color: white;
+}
+
+.favoriteButton { /* 추가된 부분: 즐겨찾기 등록 버튼 스타일 */
+  width: 180px;
+  background-color: #0F3C3C;
+  color: white;
+}

@@ -1,0 +1,114 @@
+.msgBoxContainer {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 300px;
+}
+
+.tabContainer{
+   margin-top: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+}
+
+.leftButtons {
+  display: flex;
+  margin-left: 5%;
+}
+
+.rightButtons {
+  display: flex;
+}
+
+.tabButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00823f91;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  color: white;
+}
+
+
+
+.activeTab {
+  background-color: #00823E;
+}
+
+.deleteSelectedButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #CF1E1E;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.deleteSelectedButton:hover {
+  opacity: 0.8;
+}
+
+.msgBoxTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.msgBoxTh, .msgBoxTd {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.msgBoxTh {
+  background-color: #f4f4f4;
+}
+
+.msgBoxTd {
+  text-align: center;
+}
+
+.msgBoxButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.msgBoxReplyButton, .msgBoxsendPagebtn {
+  background-color: #00823E;
+  color: white;
+}
+
+.msgBoxsendPagebtn{
+   margin-left: 5%;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 14px;
+   padding: 5px 10px;
+   border: none;
+}
+
+.msgBoxDeleteButton {
+  background-color: #CF1E1E;
+  color: white;
+}
+
+.msgBoxReplyButton:hover, .msgBoxDeleteButton:hover, .msgBoxsendPagebtn:hover {
+  opacity: 0.8;
+}
+
+.msgBoxsendPagebtn{
+
+}

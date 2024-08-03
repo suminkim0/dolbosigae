@@ -1,0 +1,52 @@
+.searchBox {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBox select,
+.searchBox input,
+.searchBox button {
+  vertical-align: middle;
+  height: 40px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.searchBox select{
+  position: relative;
+  border-right: none;
+}
+
+.searchBox input {
+  border-radius: 0;
+  width: 50%;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchBox button {
+  border-radius: 0;
+  border-left: none;
+  margin-right: 10px;
+  width: 80px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 5px;
+  width: 24px;
+}
+
+.checkbox label {
+  margin: 0;
+  font-size: 14px;
+}

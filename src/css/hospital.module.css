@@ -1,0 +1,167 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100vw; /* 가로 사이드바 생기지 않도록 수정 */
+  margin-top: 40px;
+  overflow-x: hidden; /* 가로 스크롤 제거 */
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* 가운데 정렬을 위해 너비 조정 */
+  gap: 20px; /* 간격을 좁히기 위해 gap 조정 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.searchAndTableContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* 간격을 좁히기 위해 gap 조정 */
+}
+
+.searchContainer {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 200px;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: #00823E;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  opacity: 0.8;
+}
+
+.tableContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+  table-layout: fixed; /* 테이블 레이아웃 고정 */
+}
+
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* 테이블 레이아웃 고정 */
+}
+
+
+.tableContainer th, .tableContainer td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+  white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+  overflow: hidden;
+  text-overflow: ellipsis; /* 텍스트가 넘칠 경우 ...으로 대체 */
+}
+
+.tableContainer th:nth-child(1),
+.tableContainer td:nth-child(1) {
+  width: 5%; 
+}
+
+.tableContainer th:nth-child(2),
+.tableContainer td:nth-child(2) {
+  width: 20%; 
+}
+
+.tableContainer th:nth-child(3),
+.tableContainer td:nth-child(3) {
+  width: 10%; 
+}
+
+.tableContainer th:nth-child(4),
+.tableContainer td:nth-child(4) {
+  width: 10%; 
+}
+
+.tableContainer th:nth-child(5),
+.tableContainer td:nth-child(5) {
+  width: 40%; 
+}
+
+.tableContainer th:nth-child(6),
+.tableContainer td:nth-child(6) {
+  width: 10%; 
+}
+
+.tableContainer th:nth-child(7),
+.tableContainer td:nth-child(7) {
+  width: 10%; 
+}
+
+.tableContainer th {
+  background-color: #f4f4f4;
+}
+
+.linkButton {
+  background-color: #00823E;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  opacity: 0.8;
+}
+
+.DeleteBtn {
+  background-color: #CF1E1E;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mapContainer {
+  flex: 1;
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-left: 20px; /* 간격 조정을 위해 margin-left 추가 */
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

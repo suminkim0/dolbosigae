@@ -1,0 +1,28 @@
+.sub_title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #F4F2EE;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sub_title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0F3C3C;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.logo_white {
+  width: 500px;
+  opacity: 0.4;
+  object-fit: cover;
+  margin-left: auto;
+}

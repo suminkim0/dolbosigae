@@ -1,0 +1,96 @@
+.homeCommunity {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin: 50px 0;
+  margin-bottom: 80px;
+}
+
+.homeCommunity ul{
+  padding: 0;
+}
+
+.ctrl_box {
+  display: flex;
+  align-items: center;
+}
+
+.ctrl_box dl {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0;
+}
+
+.ctrl_box h2 {
+  margin-right: 20px;
+  font-size: 24px;
+  padding-left: 5%;
+  color: #0F3C3C;
+}
+
+.ctrl_box dd {
+  margin: 0 5px;
+  display: block;
+}
+
+.ctrl_box .blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.ctrl_box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.ctrl_box img {
+  width: 30px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ctrl_prev,
+.ctrl_next,
+.ctrl_stop,
+.ctrl_play {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.ctrl_prev img,
+.ctrl_next img,
+.ctrl_stop img,
+.ctrl_play img {
+  width: 100%;
+  height: 100%;
+}
+
+#bannerList {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bannerList ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#bannerList li {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+

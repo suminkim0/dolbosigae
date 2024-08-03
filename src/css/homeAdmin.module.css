@@ -1,0 +1,105 @@
+.homeAdminContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  position: relative; /* imgBox의 위치를 조정하기 위해 추가 */
+}
+
+.homeAdminContainer ul {
+  list-style-type: none;
+  padding: 0; /* 기본 패딩 제거 */
+}
+
+.oftenAdmin, .latestAdmin{
+  width: 400px;
+  margin-right: 10%;
+}
+
+.oftenAdminTitle, .latestAdminTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oftenAdminTitle button, .latestAdminTitle button{
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+}
+
+.oftenAdmin h3, .latestAdmin h3 {
+  font-size: 24px;
+  color: #0F3C3C; /* 더 진한 색상 */
+  margin-bottom: 10px;
+}
+
+.oftenAdmin ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.oftenAdmin ul li a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.oftenAdmin ul li a:hover {
+  color: #009f4d;
+  text-decoration: underline;
+}
+
+.latestAdmin ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latestAdmin ul li {
+  display: flex;
+  align-items: center;
+}
+
+.latestAdmin ul li.ellipsis {
+  white-space: nowrap; /* 텍스트를 한 줄로 표시 */
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis; /* 말줄임표(...)를 추가 */
+}
+
+.imgBox {
+  width: 30%; /* imgBox의 너비를 30%로 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.imgBox img {
+  width: 100%; /* 이미지가 부모 요소에 맞춰지도록 설정 */
+  border-radius: 25px;
+  position: relative;
+}
+
+.imgBox button {
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #005c2c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 57%;
+  left: 8%;
+}
+
+.imgBox button:hover {
+  background-color: #009f4d; /* 호버 시 색상 변경 */
+}

@@ -1,0 +1,50 @@
+.editor {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 80%;
+  min-height: 650px;
+}
+
+.adminTitle {
+  width: 100%;
+  border-radius: 0;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid #D9D9D9;
+  border-bottom: none;
+}
+
+.writeBtnGroup{
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.writeBtnGroup button{
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+.writeBtnGroup button:hover{
+  opacity: 0.8;
+}
+
+.writeBtn{
+  margin-right: 10px;
+  background-color: #595959;
+  color: white;
+}
+
+.commentBtn{
+  background-color: #00823E;
+  color: white;
+}
+
+

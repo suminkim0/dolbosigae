@@ -1,0 +1,194 @@
+.searchBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.searchBox select{
+  width: 150px;
+  height: 57px;
+  border-radius: 10px;
+  border: 1px solid #BEB4B4;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  outline: none;
+}
+
+.searchBox input{
+  width: 500px;
+  height: 57px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  outline: none;
+  font-size: 16px;
+  position: relative;
+  top: -5px;
+}
+
+.searchBox button{
+  width: 100px;
+  height: 57px;
+  background-color: #00823E;
+  color: white;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.searchBox button:hover {
+  opacity: 0.8;
+}
+
+.manage_table_container {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  margin-top: 20px;
+}
+
+.manage_table {
+  width: 1800px;
+  border-collapse: collapse;
+  font-size: 20px; /* 테이블 안의 글자 크기 설정 */
+}
+
+.manage_table th, .manage_table td {
+  border: 1px solid #EFEFEF;
+  padding: 4px;
+  text-align: center;
+}
+
+.manage_table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* 테이블 셀의 오른쪽과 왼쪽 경계선 제거 */
+.manage_table td:nth-child(3), .manage_table td:nth-child(4) {
+  border-right: none;
+}
+
+.manage_table td:nth-child(4), .manage_table td:nth-child(5) {
+  border-left: none;
+}
+
+.manage_table td{
+  height: 200px;
+}
+
+/* 라벨과 인풋을 정렬하는 컨테이너 */
+.flex_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.label {
+  width: 100px; /* 라벨의 고정된 너비 */
+  text-align: right;
+  margin-right: 10px; /* 라벨과 입력 필드 사이의 간격 */
+}
+
+.manage_table_container input {
+  width: 150px; /* 입력 필드의 고정된 너비 */
+  height: 35px;
+  border: 1px solid #BEB4B4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.searchBox input{
+  border: 1px solid #BEB4B4;
+}
+
+.customSelect {
+  width: 150px; /* 입력 필드의 고정된 너비 */
+  height: 35px;
+  border: 1px solid #BEB4B4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.manage_table_container input[type="checkbox"] {
+  width: 25px;
+}
+
+input.petInfo {
+  width: 300px;
+}
+
+.pet_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.manage_table_container  button { 
+  width: 60px;
+  height: 57px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.searchBox button {
+  width: 100px;
+  height: 57px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+button.update {
+  background-color: #00823E;
+  color: white;
+}
+
+button.update:hover {
+  background-color: #00A44B; /* 약간 더 밝은 초록색 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+button.delete {
+  background-color: #CF1E1E;
+  color: white;
+  transition: background-color 0.3s, box-shadow 0.3s; /* 부드러운 전환 효과 추가 */
+}
+
+button.delete:hover {
+  background-color: #E02D2D; /* 약간 더 밝은 빨간색 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+/* 페이지 번호 스타일링 */
+.pagination button {
+  background: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.pagination .activePage {
+  background-color: #00823E;
+  color: white;
+  border: none; /* 테두리 제거 */
+}
+
+.pagination button:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,108 @@
+.searchBox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.searchBox select,
+.searchBox input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.searchBox input {
+  width: 50%;
+}
+
+.searchBox button {
+  padding: 10px 20px;
+  background-color: #00823E;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.listItem {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.listItem img {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.listItem div {
+  margin: 10px 0;
+}
+
+.abbreed{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 반응형 디자인 추가 */
+@media (max-width: 768px) {
+  .listContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .listContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.paginationGroup {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+
+.paginationGroup button {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+.paginationGroup .activePage {
+  background-color: #00823E;
+  color: #fff;
+}

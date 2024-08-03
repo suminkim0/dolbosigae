@@ -1,0 +1,69 @@
+.msgSendContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.msgSendHeader {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.msgSendSearch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.msgSendSearch input, .msgSendSearch select {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.msgSendButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.msgSendButton:hover {
+  background-color: #45a049;
+}
+
+.msgSendSearchResults {
+  margin-bottom: 20px;
+}
+
+.msgSendUser {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.msgSendUser:hover {
+  background-color: #f1f1f1;
+}
+
+.msgSendForm input, .msgSendTextarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.msgSendButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.msgSendButton:hover {
+  background-color: #45a049;
+}

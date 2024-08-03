@@ -1,0 +1,30 @@
+.main_container{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.info_Img{
+  width: 850px;
+  height: 400px;
+}
+
+.main_container table{
+  width: 800px;
+  border: 1px solid black;
+  height: 60px;
+}
+
+.name_td{
+  background-color: rgb(45, 177, 45);
+  border-right: 1px solid black;
+  text-align: center;
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+.data_Td{
+
+  height: 20px;
+}

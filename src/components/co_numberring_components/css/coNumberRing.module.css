@@ -1,0 +1,48 @@
+.numberRing_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 5px; /* 버튼 사이 간격을 추가 */
+}
+
+.numberButton,
+.leftAllButton,
+.leftButton,
+.rightButton,
+.rightAllButton {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px; /* 모서리를 부드럽게 둥글게 설정 */
+}
+
+.numberButton:hover,
+.leftAllButton:hover,
+.leftButton:hover,
+.rightButton:hover,
+.rightAllButton:hover {
+    background-color: #00823E;
+    color: white;
+    border-color: #00823E;
+}
+
+.numberButton:active,
+.leftAllButton:active,
+.leftButton:active,
+.rightButton:active,
+.rightAllButton:active {
+    background-color: #006622;
+    color: white;
+}
+
+.numberButton.active {
+    background-color: #006622;
+    color: white;
+    border-color: #006622;
+}

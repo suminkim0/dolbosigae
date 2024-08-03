@@ -1,0 +1,48 @@
+.title{
+  margin: 0 auto;
+  padding: 0;
+  background-color: #F4F2EE;
+  padding: 20px;
+}
+
+.title h2{
+ margin: 0 auto;
+ color: #0F3C3C;
+}
+
+.title p{
+  color: #555;
+}
+
+.favoriteList {
+  list-style: none;
+  padding: 0;
+}
+
+.favoriteItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.favoriteImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.favoriteInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.favoriteName {
+  font-weight: bold;
+}
+
+.favoriteId {
+  color: #555;
+}

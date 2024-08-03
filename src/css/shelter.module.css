@@ -1,0 +1,80 @@
+.searchBox {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 50px 0;
+  padding: 0;
+}
+
+.searchBox select, .searchBox input, .searchBox button {
+  height: 40px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #b6b6b6;
+}
+
+.searchBox select {
+  border-right: none; /* 우측 경계선 제거 */
+}
+
+.searchBox input {
+  width: 30%;
+}
+
+.searchBox button {
+  width: 60px; /* 픽셀 단위로 너비 설정 */
+  background-color: #00823E;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 배경색 변경 시 부드러운 전환 */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* 자동으로 테이블 셀 크기 조정 */
+  margin-top: 20px; /* 테이블과 검색창 사이의 여백 추가 */
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px; /* padding 크기 조정 */
+  text-align: left;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: #26816E;
+}
+
+.paginationGroup {
+  border: none !important;
+}
+
+.paginationGroup button {
+  padding: 8px 12px; /* 버튼 크기 조정 */
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 배경색 변경 시 부드러운 전환 */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.paginationGroup .activePage {
+  background-color: #00823E;
+  color: white;
+}

@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^42.0.2",
+    "@ckeditor/ckeditor5-react": "^8.0.0",
+    "@stomp/stompjs": "^7.0.0",
+    "axios": "^1.7.2",
+    "dompurify": "^3.1.6",
+    "jquery": "^3.7.1",
+    "react-router-dom": "^6.24.1",
+    "slick-carousel": "^1.8.1",
+    "svg-url-loader": "^8.0.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "babel-plugin-inline-react-svg": "^2.0.2",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

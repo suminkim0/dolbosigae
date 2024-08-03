@@ -1,0 +1,40 @@
+.sub_title_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: #00823E;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sub_title_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* 텍스트를 로고 위에 위치하게 설정 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sub_title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.logo_white {
+  width: 500px;
+  opacity: 0.4;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.full_logo_white {
+  width: 150px;
+  margin-bottom: 10px; /* 로고와 텍스트 사이에 약간의 간격 추가 */
+}

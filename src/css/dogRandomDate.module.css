@@ -1,0 +1,140 @@
+.subContainer {
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 450px;
+}
+
+.sentence {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+
+.logo_small {
+  width: 50px;
+}
+
+.sentenceSub {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.tableHeader {
+  background-color: #f2f2f2;
+}
+
+.tableCell, .tableHeader {
+  padding: 10px;
+  text-align: left;
+}
+
+.select {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.submitButton {
+  background-color: #595959;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  opacity: 0.8;
+}
+
+.randomDogContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+}
+
+.speechBox{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.speechBox p{
+  z-index: 3;
+  font-size: 24px;
+  position: absolute;
+}
+
+.speechBox img{
+  position: absolute;
+  width: 500px;
+  z-index: 2;
+}
+
+.randomDogImage {
+  max-width: 500px;
+  height: auto;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.randomDogText {
+  margin: 10px 0;
+  font-size: 20px;
+  width: 60%;
+}
+
+.randomDogText:first-child{
+  font-size: 28px;
+}
+
+.randomDogText:nth-child(2) {
+  font-size: 28px; 
+  font-weight: bold;
+  color: #0F3C3C;
+}
+
+.messageButton {
+  background-color: #00823E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.messageButton:hover {
+  opacity: 0.8;
+}

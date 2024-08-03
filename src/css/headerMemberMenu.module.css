@@ -1,0 +1,51 @@
+/* headerMemberMenu.module.css */
+.auth {
+  align-self: flex-end;
+  margin: 10px;
+}
+
+.auth ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.top_button {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.authItem {
+  color: #BEB4B4;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+button.authItem {
+  width: 120px;
+  height: 50px;
+  border: 1px solid #CCCCCC;
+  background-color: #EFEFEF;
+  transition: box-shadow 0.3s ease;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.authItem:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.authItem img {
+  margin-right: 8px;
+}
+
+.login, .register, .memberView, .my_page {
+  width: 30px;
+  height: auto;
+}
