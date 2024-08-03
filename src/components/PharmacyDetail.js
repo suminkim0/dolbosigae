@@ -13,7 +13,7 @@ const PharmacyDetail = () => {
     useEffect(() => {
         const fetchPharmacyInfo = async () => {
             try {
-                const response = await fetch(`http://localhost:9999/phinfo?phId=${phId}`);
+                const response = await fetch(`http://13.124.183.147:59879/phinfo?phId=${phId}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

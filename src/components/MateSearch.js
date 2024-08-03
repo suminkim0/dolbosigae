@@ -43,7 +43,7 @@ export default function MateSearch() {
 
   const fetchFavoriteIds = async () => {
     try {
-      const response = await axios.get('http://localhost:9999/mate/fav/list', {
+      const response = await axios.get('http://13.124.183.147:59879/mate/fav/list', {
         params: { id: userId },
       });
       console.log('Fetched favorite IDs:', response.data); // 로그 추가
@@ -55,7 +55,7 @@ export default function MateSearch() {
 
   const readData = async () => {
     try {
-      const response = await axios.get('http://localhost:9999/member/walkmates', {
+      const response = await axios.get('http://13.124.183.147:59879/member/walkmates', {
         params: {
           page: currentPage,
         },
@@ -75,7 +75,7 @@ export default function MateSearch() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get('http://localhost:9999/member/walkmate/search', {
+      const response = await axios.get('http://13.124.183.147:59879/member/walkmate/search', {
         params: {
           addressText: searchAddress,
         },
@@ -112,7 +112,7 @@ export default function MateSearch() {
 
   const handleChangeWalkProfile = async () => {
     try {
-      await axios.post(`http://localhost:9999/walkmate/changeTF`, { Wid: selectedIds });
+      await axios.post(`http://13.124.183.147:59879/walkmate/changeTF`, { Wid: selectedIds });
       readData();
       setSelectedIds([]);
     } catch (error) {

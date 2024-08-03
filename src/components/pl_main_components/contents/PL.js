@@ -15,7 +15,7 @@ const PL = () => {
 
     const fetchCityData = async () => {
         try {
-            const response = await axios.get('http://localhost:9999/city/list', {
+            const response = await axios.get('http://13.124.183.147:59879/city/list', {
                 params: { plText, page, limit }
             });
             const contents = response.data.contents || [];

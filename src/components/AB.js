@@ -14,7 +14,7 @@ export default function AB() {
   useEffect(() => {
     const readData = async () => {
       try {
-        const response = await axios.get('http://localhost:9999/ab/list');
+        const response = await axios.get('http://13.124.183.147:59879/ab/list');
         setABList(response.data.ab);
         setPagination(response.data.pagination);
         console.log(response.data);
@@ -28,7 +28,7 @@ export default function AB() {
   const handlePageChange = (pageNo) => {
     const fetchPageData = async () => {
       try {
-        const response = await axios.get(`http://localhost:9999/ab/list?page=${pageNo}`);
+        const response = await axios.get(`http://13.124.183.147:59879/ab/list?page=${pageNo}`);
         setABList(response.data.ab);
         setPagination(response.data.pagination);
       } catch (error) {
@@ -40,7 +40,7 @@ export default function AB() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get('http://localhost:9999/ab/search', {
+      const response = await axios.get('http://13.124.183.147:59879/ab/search', {
         params: {
           category: searchCategory,
           term: searchTerm

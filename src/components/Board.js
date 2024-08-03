@@ -26,7 +26,7 @@ const Board = () => {
 
     const fetchBoardData = async () => {
         try {
-            const response = await axios.get('http://localhost:9999/boards/list', {
+            const response = await axios.get('http://13.124.183.147:59879/boards/list', {
                 params: { showText, page, limit }
             });
             const contents = response.data.contents || [];
@@ -56,7 +56,7 @@ const Board = () => {
 
     const deleteBoard = async (showId) => {
         try {
-            const response = await axios.delete(`http://localhost:9999/boards/delete/${showId}`, {
+            const response = await axios.delete(`http://13.124.183.147:59879/boards/delete/${showId}`, {
                 headers: {
                     'userRole': user && user.boardMemberGradeNo === 0 ? 'ADMIN' : ''
                 }

@@ -30,7 +30,7 @@ export default function AdminContact() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:9999/admin/contact');
+        const response = await axios.get('http://13.124.183.147:59879/admin/contact');
         setAdminBoardList(response.data.admin);
         setPagination(response.data.pagination);
       } catch (error) {
@@ -61,7 +61,7 @@ export default function AdminContact() {
       // 검색 결과의 페이지 변경 로직
       const fetchPageData = async () => {
         try {
-          const response = await axios.get(`http://localhost:9999/admin/search`, {
+          const response = await axios.get(`http://13.124.183.147:59879/admin/search`, {
             params: {
               page: pageNo,
               category: searchCategory,
@@ -84,7 +84,7 @@ export default function AdminContact() {
       // 일반 데이터의 페이지 변경 로직
       const fetchPageData = async () => {
         try {
-          const response = await axios.get(`http://localhost:9999/admin/contact?page=${pageNo}`);
+          const response = await axios.get(`http://13.124.183.147:59879/admin/contact?page=${pageNo}`);
           setAdminBoardList(response.data.admin);
           setPagination(response.data.pagination);
         } catch (error) {
@@ -97,14 +97,14 @@ export default function AdminContact() {
 
   const deleteClick = async (adminNo, adminCommentCount) => {
     try {
-      const response = await axios.delete(`http://localhost:9999/admin/delete/${adminNo}/${adminCommentCount}`);
+      const response = await axios.delete(`http://13.124.183.147:59879/admin/delete/${adminNo}/${adminCommentCount}`);
       alert(response.data);
 
       // 상태 업데이트: 삭제된 게시글을 목록에서 제거한 후 최신 데이터 다시 불러오기
       if (searchResults) {
         const fetchData = async () => {
           try {
-            const response = await axios.get(`http://localhost:9999/admin/search`, {
+            const response = await axios.get(`http://13.124.183.147:59879/admin/search`, {
               params: {
                 page: searchPagination.currentPage,
                 category: searchCategory,
@@ -125,7 +125,7 @@ export default function AdminContact() {
       } else {
         const fetchData = async () => {
           try {
-            const response = await axios.get(`http://localhost:9999/admin/contact?page=${pagination.currentPage}`);
+            const response = await axios.get(`http://13.124.183.147:59879/admin/contact?page=${pagination.currentPage}`);
             setAdminBoardList(response.data.admin);
             setPagination(response.data.pagination);
           } catch (error) {

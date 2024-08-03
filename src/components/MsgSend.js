@@ -33,7 +33,7 @@ function MsgSend() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get('http://localhost:9999/member/search', {
+      const response = await axios.get('http://13.124.183.147:59879/member/search', {
         params: {
           category: '회원ID',
           term: searchTerm,
@@ -59,7 +59,7 @@ function MsgSend() {
     };
 
     try {
-      await axios.post('http://localhost:9999/msg/send', message, {
+      await axios.post('http://13.124.183.147:59879/msg/send', message, {
         headers: {
           'Content-Type': 'application/json',
         },

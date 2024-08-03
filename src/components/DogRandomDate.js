@@ -23,7 +23,7 @@ export default function DogRandomDate() {
     };
 
     try {
-      const response = await axios.post('http://localhost:9999/dog/random/date', jsonData, {
+      const response = await axios.post('http://13.124.183.147:59879/dog/random/date', jsonData, {
         headers: {
           'Content-Type': 'application/json'
         }

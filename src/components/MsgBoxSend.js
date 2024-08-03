@@ -25,7 +25,7 @@ function MsgBoxSend() {
   useEffect(() => {
     const fetchSentMessages = async () => {
       try {
-        const response = await axios.get(`http://localhost:9999/msg/sent/${userId}`);
+        const response = await axios.get(`http://13.124.183.147:59879/msg/sent/${userId}`);
         setSentMessages(response.data);
       } catch (error) {
         console.error('보낸 메시지 목록을 가져오는 중 오류 발생:', error);
@@ -39,7 +39,7 @@ function MsgBoxSend() {
 
   const handleDelete = async (msgId) => {
     try {
-      await axios.delete(`http://localhost:9999/msg/delete/${msgId}`);
+      await axios.delete(`http://13.124.183.147:59879/msg/delete/${msgId}`);
       setSentMessages(sentMessages.filter(message => message.msgId !== msgId));
     } catch (error) {
       console.error('메시지 삭제 중 오류 발생:', error);
@@ -58,7 +58,7 @@ function MsgBoxSend() {
 
   const handleDeleteSelected = async () => {
     try {
-      await Promise.all(selectedMessages.map(msgId => axios.delete(`http://localhost:9999/msg/delete/${msgId}`)));
+      await Promise.all(selectedMessages.map(msgId => axios.delete(`http://13.124.183.147:59879/msg/delete/${msgId}`)));
       setSentMessages(sentMessages.filter(message => !selectedMessages.includes(message.msgId)));
       setSelectedMessages([]);
     } catch (error) {

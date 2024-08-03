@@ -10,7 +10,7 @@ export default function AdminContactDefaultTable() {
   useEffect(() => {
     const readData = async () => {
       try {
-        const response = await axios.get('http://localhost:9999/admin/default');
+        const response = await axios.get('http://13.124.183.147:59879/admin/default');
         setAdminDefaultList(response.data);
 
       } catch (error) {

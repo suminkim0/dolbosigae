@@ -26,7 +26,7 @@ const HO = () => {
 
     const fetchHospitalData = async () => {
         try {
-            const response = await axios.get('http://localhost:9999/hospitals/list', {
+            const response = await axios.get('http://13.124.183.147:59879/hospitals/list', {
                 params: { hoText, page, limit }
             });
             const contents = response.data.contents || [];
@@ -56,7 +56,7 @@ const HO = () => {
 
     const deleteHospital = async (hoId) => {
         try {
-            const response = await axios.delete(`http://localhost:9999/hospitals/delete/${hoId}`, {
+            const response = await axios.delete(`http://13.124.183.147:59879/hospitals/delete/${hoId}`, {
                 headers: {
                     'userRole': user.boardMemberGradeNo === 0 ? 'ADMIN' : ''
                 }

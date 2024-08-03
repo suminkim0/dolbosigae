@@ -25,7 +25,7 @@ export default function MemberView() {
   useEffect(() => {
     const readData = async () => {
       try {
-        const response = await axios.get('http://localhost:9999/member/list');
+        const response = await axios.get('http://13.124.183.147:59879/member/list');
         console.log('Pagination Data:', response.data.pagination);
         setMemberList(response.data.members);
         setPagination(response.data.pagination);
@@ -79,7 +79,7 @@ export default function MemberView() {
   const handlePageChange = (pageNo) => {
     const fetchPageData = async () => {
       try {
-        const response = await axios.get(`http://localhost:9999/member/list?page=${pageNo}`);
+        const response = await axios.get(`http://13.124.183.147:59879/member/list?page=${pageNo}`);
         setMemberList(response.data.members);
         setPagination(response.data.pagination);
       } catch (error) {
@@ -91,7 +91,7 @@ export default function MemberView() {
 
   const deleteClick = async (memberId) => {
     try {
-      const response = await axios.delete(`http://localhost:9999/member/delete/${memberId}`);
+      const response = await axios.delete(`http://13.124.183.147:59879/member/delete/${memberId}`);
       alert(response.data); // 서버 응답 메시지를 알림으로 표시
       // 상태 업데이트: 삭제된 멤버를 목록에서 제거
       setMemberList(memberList.filter(member => member.boardMemberId !== memberId));
@@ -103,7 +103,7 @@ export default function MemberView() {
 
   const updateClick = async (member) => {
     try {
-      const response = await axios.post(`http://localhost:9999/member/update`, member);
+      const response = await axios.post(`http://13.124.183.147:59879/member/update`, member);
       console.log(response.data);
       alert("회원 정보가 업데이트되었습니다."); 
     } catch (error) {
@@ -116,7 +116,7 @@ export default function MemberView() {
     try {
       console.log('Search Category:', searchCategory);
       console.log('Search Term:', searchTerm);
-      const response = await axios.get('http://localhost:9999/member/search', {
+      const response = await axios.get('http://13.124.183.147:59879/member/search', {
         params: {
           category: searchCategory,
           term: searchTerm

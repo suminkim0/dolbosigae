@@ -30,7 +30,7 @@ function MsgBoxReceive() {
   useEffect(() => {
     const fetchReceivedMessages = async () => {
       try {
-        const response = await axios.get(`http://localhost:9999/msg/received/${userId}`);
+        const response = await axios.get(`http://13.124.183.147:59879/msg/received/${userId}`);
         setReceivedMessages(response.data);
       } catch (error) {
         console.error('받은 메시지 목록을 가져오는 중 오류 발생:', error);
@@ -43,7 +43,7 @@ function MsgBoxReceive() {
   }, [userId]);
 
   useEffect(() => {
-    const socket = new SockJS('http://localhost:9999/ws');
+    const socket = new SockJS('http://13.124.183.147:59879/ws');
     const stompClient = new Client({
       webSocketFactory: () => socket,
       debug: function (str) {
@@ -90,7 +90,7 @@ function MsgBoxReceive() {
 
   const handleDelete = async (msgId) => {
     try {
-      await axios.delete(`http://localhost:9999/msg/delete/${msgId}`);
+      await axios.delete(`http://13.124.183.147:59879/msg/delete/${msgId}`);
       setReceivedMessages(receivedMessages.filter(message => message.msgId !== msgId));
     } catch (error) {
       console.error('메시지 삭제 중 오류 발생:', error);
@@ -99,7 +99,7 @@ function MsgBoxReceive() {
 
   const handleDeleteSelected = async () => {
     try {
-      await Promise.all(selectedMessages.map(msgId => axios.delete(`http://localhost:9999/msg/delete/${msgId}`)));
+      await Promise.all(selectedMessages.map(msgId => axios.delete(`http://13.124.183.147:59879/msg/delete/${msgId}`)));
       setReceivedMessages(receivedMessages.filter(message => !selectedMessages.includes(message.msgId)));
       setSelectedMessages([]);
     } catch (error) {

@@ -12,7 +12,7 @@ const WinnerPage = () => {
     useEffect(() => {
         const fetchWinDogCount = async () => {
             try {
-                const response = await axios.post(`http://localhost:9999/winCount?dogId=${dogId}`);
+                const response = await axios.post(`http://13.124.183.147:59879/winCount?dogId=${dogId}`);
                 console.log("우승횟수 백엔드로 전송:", response.data);
 
             } catch (error) {
@@ -27,7 +27,7 @@ const WinnerPage = () => {
         const fetchWinnerDog = async () => {
             try {
                 console.log(`${dogId}`)
-                const response = await axios.get('http://localhost:9999/winnerDog', {
+                const response = await axios.get('http://13.124.183.147:59879/winnerDog', {
                     params: {
                         dogId: dogId
                     }
@@ -45,7 +45,7 @@ const WinnerPage = () => {
     useEffect(() => {
         const AllRanking = async () => {
             try {
-                const response = await axios.get('http://localhost:9999/AllRanking');
+                const response = await axios.get('http://13.124.183.147:59879/AllRanking');
                 setAllRanking(response.data);
                 console.log(response.data);
             } catch (error) {

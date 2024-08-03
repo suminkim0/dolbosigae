@@ -30,11 +30,11 @@ export default function MatePetProfile() {
     const readData = async () => {
       if (profileUserId && userId) {
         try {
-          const response = await axios.get(`http://localhost:9999/member/petprofile/${profileUserId}`);
+          const response = await axios.get(`http://13.124.183.147:59879/member/petprofile/${profileUserId}`);
           setPetProfile(response.data);
 
           // 즐겨찾기 상태 확인
-          const favResponse = await axios.get('http://localhost:9999/mate/fav/status', {
+          const favResponse = await axios.get('http://13.124.183.147:59879/mate/fav/status', {
             params: {
               loginId: userId,
               targetId: profileUserId
@@ -53,7 +53,7 @@ export default function MatePetProfile() {
 
   const handleFavoriteClick = async () => {
     try {
-      const response = await axios.post('http://localhost:9999/mate/fav', {
+      const response = await axios.post('http://13.124.183.147:59879/mate/fav', {
         loginId: userId,
         targetId: profileUserId
       });

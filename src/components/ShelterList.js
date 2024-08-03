@@ -16,7 +16,7 @@ const ShelterList = () => {
 
     const fetchShelterData = async () => {
         try {
-            const response = await axios.get('http://localhost:9999/shelters/list', {
+            const response = await axios.get('http://13.124.183.147:59879/shelters/list', {
                 params: {
                     page,   // pageNo -> page로 수정
                     limit,  // pageContentEa -> limit로 수정

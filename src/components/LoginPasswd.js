@@ -15,7 +15,7 @@ export default function LoginPasswd() {
     const idValue = txtId.current.value;
     const nameValue = txtName.current.value;
     try {
-      const response = await axios.post(`http://localhost:9999/member/check/id`, {
+      const response = await axios.post(`http://13.124.183.147:59879/member/check/id`, {
         idValue: idValue,
         nameValue: nameValue
       });
@@ -43,7 +43,7 @@ export default function LoginPasswd() {
 
     try {
       const idValue = txtId.current.value;
-      const response = await axios.post(`http://localhost:9999/find/passwd`, {
+      const response = await axios.post(`http://13.124.183.147:59879/find/passwd`, {
         id: idValue,
         passwd: newPass
       });

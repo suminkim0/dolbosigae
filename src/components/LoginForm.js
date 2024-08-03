@@ -12,7 +12,7 @@ export default function LoginForm({ onLoginSuccess }) {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:9999/login', { id, pass: password }, { withCredentials: true });
+      const response = await axios.post('http://13.124.183.147:59879/login', { id, pass: password }, { withCredentials: true });
       console.log('로그인 응답:', response.data);
 
       if (response.data.success) {

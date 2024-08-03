@@ -14,7 +14,7 @@ export default function AdminContactSearch({ onSearchResults, setSearchCategory,
     setSearchTerm(searchTerm);
 
     try {
-      const response = await axios.get('http://localhost:9999/admin/search', {
+      const response = await axios.get('http://13.124.183.147:59879/admin/search', {
         params: {
           category: searchCategory,
           term: searchTerm
@@ -38,7 +38,7 @@ export default function AdminContactSearch({ onSearchResults, setSearchCategory,
 
     if (isChecked) {
       try {
-        const response = await axios.get('http://localhost:9999/admin/no-answer');
+        const response = await axios.get('http://13.124.183.147:59879/admin/no-answer');
         console.log('No answer response:', response.data); // 응답 데이터 로깅
         if (Array.isArray(response.data)) {
           onSearchResults(response.data, { currentPage: 1, totalItems: response.data.length }); // 임시 페이지네이션

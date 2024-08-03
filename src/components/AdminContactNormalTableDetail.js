@@ -23,7 +23,7 @@ export default function AdminContactNormalTableDetail() {
   useEffect(() => {
     const fetchDetail = async () => {
       try {
-        const response = await axios.get(`http://localhost:9999/admin/contact/detail/${adminNo}`);
+        const response = await axios.get(`http://13.124.183.147:59879/admin/contact/detail/${adminNo}`);
         console.log(response);
         setComment(response.data.commentDetails);
         setDetail(response.data);
@@ -46,13 +46,13 @@ export default function AdminContactNormalTableDetail() {
     // 댓글 삭제 버튼
     const deleteCommentClick = async (adminCommentNo) => {
       try {
-        const response = await axios.delete(`http://localhost:9999/admin/delete/${adminCommentNo}`);
+        const response = await axios.delete(`http://13.124.183.147:59879/admin/delete/${adminCommentNo}`);
         alert(response.data); // 서버 응답 메시지를 알림으로 표시
   
         // 상태 업데이트: 삭제된 게시글을 목록에서 제거한 후 최신 데이터 다시 불러오기
         const fetchData = async () => {
           try {
-            const response = await axios.get(`http://localhost:9999/admin/contact/detail/${adminNo}`);
+            const response = await axios.get(`http://13.124.183.147:59879/admin/contact/detail/${adminNo}`);
             console.log(response);
             setComment(response.data.commentDetails);
             setDetail(response.data);
@@ -70,7 +70,7 @@ export default function AdminContactNormalTableDetail() {
   // 게시글 삭제 버튼
   const deleteClick = async (adminNo, adminCommentCount) => {
     try {
-      const response = await axios.delete(`http://localhost:9999/admin/delete/${adminNo}/${adminCommentCount}`);
+      const response = await axios.delete(`http://13.124.183.147:59879/admin/delete/${adminNo}/${adminCommentCount}`);
       console.log(response.data); // 서버 응답 메시지
       alert('게시글을 삭제하였습니다.\n문의 화면으로 이동합니다.');
       navigate('/admin/contact');

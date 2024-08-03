@@ -37,7 +37,7 @@ export default function BoardWrite() {
                     const base64Image = reader.result;
 
                     try {
-                        const response = await axios.post('http://localhost:9999/upload', {
+                        const response = await axios.post('http://13.124.183.147:59879/upload', {
                             image: base64Image // Base64 인코딩된 이미지 데이터를 JSON 형식으로 보냄
                         }, {
                             headers: {
@@ -102,7 +102,7 @@ export default function BoardWrite() {
                 pNick: user.boardMemberNick,
             };
 
-            const response = await axios.post('http://localhost:9999/shows', jsonData, {
+            const response = await axios.post('http://13.124.183.147:59879/shows', jsonData, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
