@@ -10,7 +10,7 @@ export default function HomeAdmin() {
   useEffect(()=>{
     const fetchData = async() => {
       try{
-        const response = await axios.get('http://13.124.183.147:59879/admin/contact');
+        const response = await axios.get('https://dolbosigae.site/admin/contact');
         setAdminBoardList(response.data.admin);
       } catch(error){
         console.error("문의글 목록을 불러오는 중 에러 발생", error);

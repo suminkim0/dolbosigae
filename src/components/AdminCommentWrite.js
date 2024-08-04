@@ -32,7 +32,7 @@ export default function AdminCommentWrite({ adminNo }) {
     console.log("jsonData:", jsonData);
 
     try {
-      const response = await axios.post('http://13.124.183.147:59879/admin/comment/write', jsonData, {
+      const response = await axios.post('https://dolbosigae.site/admin/comment/write', jsonData, {
         headers: {
           'Content-Type': 'application/json'
         }

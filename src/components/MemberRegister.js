@@ -31,7 +31,7 @@ export default function MemberRegister() {
   const isDuplicate = async () => {
     const idValue = txtId.current.value;
     try {
-      const response = await axios.get(`http://13.124.183.147:59879/member/duplicate`, {
+      const response = await axios.get(`https://dolbosigae.site/member/duplicate`, {
         params: { idValue: idValue }
       });
       const isDuplicate = response.data > 0;
@@ -111,7 +111,7 @@ export default function MemberRegister() {
     console.log("jsonData:", jsonData); // JSON 데이터가 올바른지 콘솔에 출력합니다.
 
     try {
-      const response = await axios.post('http://13.124.183.147:59879/member/register', jsonData, {
+      const response = await axios.post('https://dolbosigae.site/member/register', jsonData, {
         headers: {
           'Content-Type': 'application/json'
         }

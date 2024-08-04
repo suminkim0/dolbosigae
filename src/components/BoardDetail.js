@@ -23,7 +23,7 @@ export default function BoardDetail() {
   useEffect(() => {
     const fetchDetail = async () => {
       try {
-        const response = await axios.get(`http://13.124.183.147:59879/showinfo`, {
+        const response = await axios.get(`https://dolbosigae.site/showinfo`, {
           params: { showNo }
         });
         setDetail(response.data);
@@ -37,7 +37,7 @@ export default function BoardDetail() {
 
   const deleteClick = async () => {
     try {
-      const response = await axios.delete(`http://13.124.183.147:59879/boards/delete/${showNo}`, {
+      const response = await axios.delete(`https://dolbosigae.site/boards/delete/${showNo}`, {
         headers: {
           'userRole': user && (user.boardMemberGradeNo === 0 || user.boardMemberId === detail.mId) ? 'ADMIN' : ''
         }

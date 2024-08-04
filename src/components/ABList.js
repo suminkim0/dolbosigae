@@ -23,7 +23,7 @@ const ABList = () => {
     const fetchABList = useCallback(async () => {
         setLoading(true);
         try {
-            const response = await axios.get('http://13.124.183.147:59879/abs/list', {
+            const response = await axios.get('https://dolbosigae.site/abs/list', {
                 params: {
                     page: currentPage,
                     limit: pageContentCount,

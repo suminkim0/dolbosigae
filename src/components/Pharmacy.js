@@ -26,7 +26,7 @@ const PH = () => {
 
     const fetchPharmacyData = async () => {
         try {
-            const response = await axios.get('http://13.124.183.147:59879/pharmacies/list', {
+            const response = await axios.get('https://dolbosigae.site/pharmacies/list', {
                 params: { phText, page, limit }
             });
             const contents = response.data.contents || [];
@@ -56,7 +56,7 @@ const PH = () => {
 
     const deletePharmacy = async (phId) => {
         try {
-            const response = await axios.delete(`http://13.124.183.147:59879/pharmacies/delete/${phId}`, {
+            const response = await axios.delete(`https://dolbosigae.site/pharmacies/delete/${phId}`, {
                 headers: {
                     'userRole': user.boardMemberGradeNo === 0 ? 'ADMIN' : ''
                 }

@@ -12,7 +12,7 @@ export default function ShelterDetail() {
   useEffect(() => {
     const fetchDetail = async () => {
       try {
-        const response = await axios.get(`http://13.124.183.147:59879/shelter/detail/${shelterId}`);
+        const response = await axios.get(`https://dolbosigae.site/shelter/detail/${shelterId}`);
         console.log(response);
         setShelterDetail(response.data);
       } catch (error) {

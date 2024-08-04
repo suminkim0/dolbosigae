@@ -63,7 +63,7 @@ export default function AdminContactWrite() {
             console.log("jsonData:", jsonData);
 
             try {
-                const response = await axios.post('http://13.124.183.147:59879/admin/write', jsonData, {
+                const response = await axios.post('https://dolbosigae.site/admin/write', jsonData, {
                     headers: {
                         'Content-Type': 'application/json'
                     }

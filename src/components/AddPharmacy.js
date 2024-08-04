@@ -29,7 +29,7 @@ export default function AddPharmacy() {
     console.log("jsonData:", jsonData); // JSON 데이터가 올바른지 콘솔에 출력합니다.
 
     try {
-      const response = await axios.post('http://13.124.183.147:59879/pharmacies', jsonData, {
+      const response = await axios.post('https://dolbosigae.site/pharmacies', jsonData, {
         headers: {
           'Content-Type': 'application/json'
         }

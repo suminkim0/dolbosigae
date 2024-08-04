@@ -33,7 +33,7 @@ function MsgSend() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get('http://13.124.183.147:59879/member/search', {
+      const response = await axios.get('https://dolbosigae.site/member/search', {
         params: {
           category: '회원ID',
           term: searchTerm,
@@ -59,7 +59,7 @@ function MsgSend() {
     };
 
     try {
-      await axios.post('http://13.124.183.147:59879/msg/send', message, {
+      await axios.post('https://dolbosigae.site/msg/send', message, {
         headers: {
           'Content-Type': 'application/json',
         },

@@ -25,7 +25,7 @@ export default function MateFav() {
         if (!userId) return;
 
         console.log('Fetching favorites for userId:', userId); // userId 확인용
-        const response = await axios.get('http://13.124.183.147:59879/mate/fav/list', {
+        const response = await axios.get('https://dolbosigae.site/mate/fav/list', {
           params: { id: userId },
         });
 

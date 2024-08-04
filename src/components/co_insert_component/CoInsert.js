@@ -40,7 +40,7 @@ const CoInsert = () => {
             console.log(coNewData);
 
             try {
-                const response = await axios.post('http://13.124.183.147:59879/conven/insert', coNewData);
+                const response = await axios.post('https://dolbosigae.site/conven/insert', coNewData);
                 if (response.status === 200) {
                     console.log('등록 완료');
                     alert('등록 완료');

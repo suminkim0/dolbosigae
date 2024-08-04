@@ -13,7 +13,7 @@ export default function Shelter() {
   useEffect(() => {
     const readData = async () => {
       try {
-        const response = await axios.get('http://13.124.183.147:59879/shelter/list');
+        const response = await axios.get('https://dolbosigae.site/shelter/list');
         setShelterList(response.data.shelter);
         setPagination(response.data.pagination);
       } catch (error) {
@@ -26,7 +26,7 @@ export default function Shelter() {
   const handlePageChange = (pageNo) => {
     const fetchPageData = async () => {
       try {
-        const response = await axios.get(`http://13.124.183.147:59879/shelter/list?page=${pageNo}`);
+        const response = await axios.get(`https://dolbosigae.site/shelter/list?page=${pageNo}`);
         setShelterList(response.data.shelter);
         setPagination(response.data.pagination);
       } catch (error) {
@@ -38,7 +38,7 @@ export default function Shelter() {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get('http://13.124.183.147:59879/shelter/search', {
+      const response = await axios.get('https://dolbosigae.site/shelter/search', {
         params: {
           category: searchCategory,
           term: searchTerm

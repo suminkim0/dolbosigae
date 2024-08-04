@@ -40,7 +40,7 @@ const PlInsert = () => {
             console.log(plNewData);
 
             try {
-                const response = await axios.post('http://13.124.183.147:59879/city/insert', plNewData);
+                const response = await axios.post('https://dolbosigae.site/city/insert', plNewData);
                 if (response.status === 200) {
                     console.log('등록 완료');
                     alert('등록 완료');

@@ -16,7 +16,7 @@ export default function HomeAB() {
   useEffect(() => {
     const readData = async () => {
       try {
-        const response = await axios.get('http://13.124.183.147:59879/ab/list');
+        const response = await axios.get('https://dolbosigae.site/ab/list');
         const latestABs = response.data.ab.slice(0, 6); // 최신 6마리만 가져오기
         setABList(latestABs);
 

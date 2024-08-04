@@ -14,7 +14,7 @@ export default function ABDetail() {
   useEffect(() => {
     const fetchDetail = async () => {
       try {
-        const response = await axios.get(`http://13.124.183.147:59879/ab/detail/${abid}`);
+        const response = await axios.get(`https://dolbosigae.site/ab/detail/${abid}`);
         console.log(response);
         setAbDetail(response.data);
       } catch (error) {

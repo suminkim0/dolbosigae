@@ -26,7 +26,7 @@ export default function MyPage() {
     const readData = async () => {
       if (userId) {
         try {
-          const response = await axios.get(`http://13.124.183.147:59879/member/search/${userId}`);
+          const response = await axios.get(`https://dolbosigae.site/member/search/${userId}`);
           setMember(response.data);
           setHasPet(response.data.boardMemberPetWith === 'T');
         } catch (error) {
@@ -49,7 +49,7 @@ export default function MyPage() {
         ...member,
         passwordChanged: member.passwordChanged ? 1 : 0 // boolean을 숫자로 변환
       };
-      const response = await axios.post(`http://13.124.183.147:59879/member/update`, requestData);
+      const response = await axios.post(`https://dolbosigae.site/member/update`, requestData);
       console.log(response.data);
       alert("회원 정보가 업데이트되었습니다."); 
     } catch (error) {

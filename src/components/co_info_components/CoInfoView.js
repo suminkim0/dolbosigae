@@ -14,7 +14,7 @@ const CoInfoView = () => {
     useEffect(() => {
         const fetchConvenInfo = async () => {
             try {
-                const response = await fetch(`http://13.124.183.147:59879/conven/info?coId=${coId}`);
+                const response = await fetch(`https://dolbosigae.site/conven/info?coId=${coId}`);
                 if (!response.ok) {
                     throw new Error('서버 에러');
                 }

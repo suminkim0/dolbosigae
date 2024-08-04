@@ -15,7 +15,7 @@ export default function PetInfo() {
   useEffect(() => {
     const fetchPetInfo = async () => {
       try {
-        const response = await axios.get(`http://13.124.183.147:59879/member/walkmate/${userId}`);
+        const response = await axios.get(`https://dolbosigae.site/member/walkmate/${userId}`);
         setPetInfo(response.data);
       } catch (error) {
         console.error('펫 정보 불러오기 실패', error);

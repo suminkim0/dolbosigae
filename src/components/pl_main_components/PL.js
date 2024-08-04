@@ -26,7 +26,7 @@ const PL = () => {
     //기본적으로 뜨는 리스트
     const cityList = async () => {
         try {
-            const response = await axios.get('http://13.124.183.147:59879/city/list', {
+            const response = await axios.get('https://dolbosigae.site/city/list', {
                 params: { plText, page, limit, isDescending: true }
             });
             const contents = response.data.contents || [];
@@ -61,7 +61,7 @@ const PL = () => {
     //삭제 버튼 기능
     const deleteClick = async (id) => {
         try {
-            const response = await axios.delete(`http://13.124.183.147:59879/city/delete/${id}`)
+            const response = await axios.delete(`https://dolbosigae.site/city/delete/${id}`)
             if (response.status === 200) {
                 alert("삭제되었습니다.");
                 cityList();

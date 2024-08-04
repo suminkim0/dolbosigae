@@ -13,7 +13,7 @@ const HospitalDetail = () => {
     useEffect(() => {
         const fetchHospitalInfo = async () => {
             try {
-                const response = await fetch(`http://13.124.183.147:59879/hoinfo?hoId=${hoId}`);
+                const response = await fetch(`https://dolbosigae.site/hoinfo?hoId=${hoId}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

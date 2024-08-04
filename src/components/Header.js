@@ -41,7 +41,7 @@ export default function Header({ isLoggedIn, onLogout }) {
   const handleLogout = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.get('http://13.124.183.147:59879/logout', { withCredentials: true });
+      const response = await axios.get('https://dolbosigae.site/logout', { withCredentials: true });
       if (response.data === 'success') {
         localStorage.removeItem('user'); // 로컬 스토리지에서 사용자 정보 삭제
         onLogout(); // 상위 컴포넌트의 상태 업데이트

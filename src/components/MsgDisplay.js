@@ -14,7 +14,7 @@ function MsgDisplay() {
 
   useEffect(() => {
     if (msgId) {
-      axios.get(`http://13.124.183.147:59879/msg/message/${msgId}`)
+      axios.get(`https://dolbosigae.site/msg/message/${msgId}`)
         .then(response => {
           setMessage(response.data);
           console.log('메시지 데이터 가져오기 성공:', response.data);  // 서버 응답 로그 출력

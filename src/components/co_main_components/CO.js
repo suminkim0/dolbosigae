@@ -23,7 +23,7 @@ export default function Co() {
 
     const convenienceList = async () => {
         try {
-            const response = await axios.get('http://13.124.183.147:59879/conven/list', {
+            const response = await axios.get('https://dolbosigae.site/conven/list', {
                 params: { coText, page, limit, isDescending: true }
             });
             const contents = response.data.contents || [];
@@ -56,7 +56,7 @@ export default function Co() {
 
     const coDeleteClick = async (id) => {
         try {
-            const response = await axios.delete(`http://13.124.183.147:59879/delete/${id}`)
+            const response = await axios.delete(`https://dolbosigae.site/delete/${id}`)
             if (response.status === 200) {
                 alert("삭제되었습니다.");
                 convenienceList();

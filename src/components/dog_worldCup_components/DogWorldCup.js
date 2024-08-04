@@ -12,7 +12,7 @@ const DogWorldCup = () => {
     useEffect(() => {
         const fetchRandomDog = async () => {
             try {
-                const response = await axios.get('http://13.124.183.147:59879/RandomDog');
+                const response = await axios.get('https://dolbosigae.site/RandomDog');
                 const shuffledDogs = response.data.sort(() => Math.random() - 0.5).slice(0, 4);
                 setDogs(shuffledDogs);
             } catch (error) {

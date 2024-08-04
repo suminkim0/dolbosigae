@@ -13,7 +13,7 @@ const PlInfoView = () => {
     useEffect(() => {
         const fetchPlaceInfo = async () => {
             try {
-                const response = await fetch(`http://13.124.183.147:59879/city/info?plId=${plId}`);
+                const response = await fetch(`https://dolbosigae.site/city/info?plId=${plId}`);
                 if (!response.ok) {
                     throw new Error('데이터를 가져오는데 실패하였습니다.');
                 }
