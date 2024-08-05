@@ -19,37 +19,47 @@ export default function HomeAB() {
         const response = await axios.get('https://dolbosigae.site/ab/list');
         const latestABs = response.data.ab.slice(0, 6); // 최신 6마리만 가져오기
         setABList(latestABs);
-
-        // 슬라이더 설정
-        const $slider = $('#abListSlider > ul');
-
-        $slider.slick({
-          accessibility: false,
-          infinite: true,
-          slidesToShow: 3,  // 한번에 3개씩 보이도록 설정
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 3000,
-          speed: 500,
-          dots: false,
-          arrows: false,
-          prevArrow: '<a class="slick-prev"><img src={left} alt="previous" /></a>',
-          nextArrow: '<a class="slick-next"><img src={right} alt="next" /></a>',
-        });
-
-        $slider.on('setPosition', function () {
-          $('#abListSlider li').css('width', '100%');
-          $('#abListSlider img').css('width', '80%').css('margin', '0 auto')
-            .css('display', 'block').css('border-radius', '50px')
-            .css('box-shadow', '2px 10px 20px rgba(0, 0, 0, 0.2)');
-        });
-
       } catch (error) {
         console.error("유기견 조회 중 에러발생", error);
       }
     };
+
     readData();
   }, []);
+
+  useEffect(() => {
+    // 슬라이더 설정은 ABList가 업데이트된 후에 실행되어야 합니다.
+    if (ABList.length > 0) {
+      const $slider = $('#abListSlider > ul');
+
+      if ($slider.hasClass('slick-initialized')) {
+        $slider.slick('unslick'); // 기존 슬라이더를 제거하고 재초기화
+      }
+
+      $slider.slick({
+        accessibility: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 500,
+        dots: false,
+        arrows: false,
+        prevArrow: `<a class="slick-prev"><img src=${left} alt="previous" /></a>`,
+        nextArrow: `<a class="slick-next"><img src=${right} alt="next" /></a>`,
+      });
+
+      $slider.on('setPosition', function () {
+        $('#abListSlider li').css('width', '100%');
+        $('#abListSlider img').css('width', '80%')
+          .css('margin', '0 auto')
+          .css('display', 'block')
+          .css('border-radius', '50px')
+          .css('box-shadow', '2px 10px 20px rgba(0, 0, 0, 0.2)');
+      });
+    }
+  }, [ABList]);
 
   return (
     <div>
