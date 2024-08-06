@@ -19,7 +19,7 @@ const CoInsert = () => {
             const data = Object.fromEntries(formData.entries());
 
             if (!data.coName.trim()) {
-                alert('놀이시설 이름, 도로명 주소, 가격, 휴일은 필수 기재사항입니다.');
+                alert('편의시설 이름, 도로명 주소, 가격, 휴일은 필수 기재사항입니다.');
                 return;
             }
 
@@ -95,8 +95,8 @@ const CoInsert = () => {
                         <div className={styles.co_insert_table_container}>
                             <table className={styles.co_insert_table}>
                                 <tr className={styles.co_insert_tr}>
-                                    <th className={styles.co_insert_th}>놀이시설 이름</th>
-                                    <td className={styles.co_insert_td}><input type='text' name='coDistinction' placeholder='놀이시설 이름을 입력해주세요.' className={styles.co_insert_input} /></td>
+                                    <th className={styles.co_insert_th}>편의시설 이름</th>
+                                    <td className={styles.co_insert_td}><input type='text' name='coDistinction' placeholder='편의시설 이름을 입력해주세요.' className={styles.co_insert_input} /></td>
                                 </tr>
                                 <tr className={styles.co_insert_tr}>
                                     <th className={styles.co_insert_th}>영업 시간</th>
@@ -128,7 +128,7 @@ const CoInsert = () => {
                                 </tr>
                             </table>
                         </div>
-                        <p className={styles.co_insert_conditions}>※놀이시설 이름, 도로명 주소, 가격, 휴일은 필수 기재사항입니다.※</p>
+                        <p className={styles.co_insert_conditions}>※편의시설 이름, 도로명 주소, 가격, 휴일은 필수 기재사항입니다.※</p>
                         <div className={styles.co_insert_footer}>
                             <button className={styles.co_insertBtn} onClick={CoInsertClick}>등록</button>
                             <p>　　　　　　</p>
