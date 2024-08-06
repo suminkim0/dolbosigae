@@ -56,7 +56,7 @@ export default function Co() {
 
     const coDeleteClick = async (id) => {
         try {
-            const response = await axios.delete(`https://dolbosigae.site/delete/${id}`)
+            const response = await axios.delete(`https://dolbosigae.site/conven/delete/${id}`)
             if (response.status === 200) {
                 alert("삭제되었습니다.");
                 convenienceList();
